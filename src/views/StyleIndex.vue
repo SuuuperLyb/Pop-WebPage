@@ -1,14 +1,16 @@
 <template>
-    <starStyle>
+    <div>
+        <star-style></star-style>
         <h2>明星风格页面</h2>
-    </starStyle>
+    </div>
+
 </template>
 
 <script>
-    import StarStyle from "../components/starStyle";
+    import starStyle from "../components/starStyle";
     export default {
-        name: "StyleIndex",
-        components: {StarStyle}
+        name: "styleIndex",
+        components: {starStyle},
     }
 </script>
 

@@ -1,19 +1,16 @@
 <template>
     <div>
-        <star-style></star-style>
-        <h2>明星风格页面</h2>
+        <style-carousel></style-carousel>
     </div>
-
 </template>
 
 <script>
-    import starStyle from "../components/starStyle";
+    import styleCarousel from "../components/carousel";
     export default {
-        name: "styleIndex",
-        components: {starStyle},
+        name: "StyleIndex",
+        components: {styleCarousel},
     }
 </script>
 
 <style scoped>
-
 </style>

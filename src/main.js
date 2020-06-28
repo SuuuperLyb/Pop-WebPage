@@ -3,15 +3,13 @@ import App from './App.vue'
 import './registerServiceWorker'
 import router from './router'
 import store from './store'
-import ElementUi from 'element-ui'
 import Axios from 'axios'
-import VueAxios from 'vue-axios'
-import qs from 'qs'
+import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap/dist/js/bootstrap.js";
 
 Vue.config.productionTip = false
-Vue.use(ElementUi)
-Vue.use(qs)
 Vue.prototype.$axios=Axios
+
 new Vue({
   router,
   store,

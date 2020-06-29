@@ -33,7 +33,8 @@
                         <!--        店铺信息                -->
                         <h3>{{tstore.sName}}</h3>
                         <div class="img-div">
-                            <img :src="tstore.sImg" />
+                        <!--           商店logo，点击跳转到店铺详情页                 -->
+                            <img :src="tstore.sImg" @click="goToStore(tstore.sId)"/>
                         </div>
                     </div>
                 </div>
@@ -88,10 +89,10 @@
             this.showStyleDetail(this.getStyleId());
         },
         methods:{
-            getStyleId(){
+            getStyleId(){//获得从明星风格列表页传过来的数据
                 return this.$route.query.starStyleId;
             },
-            showStyleDetail(styleId){
+            showStyleDetail(styleId){//后端请求数据，展示明星风格详情页
                 this.$axios.get("/api/star/detail",{params:{starStyleId:styleId}})
                     .then(res => {
                             console.log(res.data.tstarStyle)

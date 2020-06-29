@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 star-item" v-for="(item,i) in page.records">
-                    <img :src="item.starimgUrl">
+                    <img :src="item.starimgUrl" @click="goToStyleDetail(item.starStyleId)">
                     <strong>{{item.starName}}</strong>|
                     <span>喜欢人数:{{item.likeNum}}</span>
                     <p>{{item.styleDesc}}</p>
@@ -106,6 +106,15 @@
                             console.log(err);
                         }
                     )
+            },
+            goToStyleDetail(starStyleId){
+                this.$router.push({
+                    path: '/StyleDetail',
+                    // name: 'mallList',
+                    query: {
+                        starStyleId: starStyleId
+                    }
+                })
             }
         }
     }

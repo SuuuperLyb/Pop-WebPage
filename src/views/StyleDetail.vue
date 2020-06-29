@@ -113,6 +113,15 @@
                             console.log(err);
                         }
                     )
+            },
+            goToStore(sid){//跳转到商店详情页
+                this.$router.push({
+                    path: '/StoreDetail',
+                    // name: 'mallList',
+                    query: {
+                        storeId: sid
+                    }
+                })
             }
         }
     }

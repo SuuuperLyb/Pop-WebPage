@@ -83,12 +83,12 @@
         },
         methods:{
             //跳转到风格详情页
-            goToStyleDetail(tarStyleId){
+            goToStyleDetail(starStyleId){
                 this.$router.push({
                     path: '/StyleDetail',
                     // name: 'mallList',
                     query: {
-                        tarStyleId: tarStyleId
+                        starStyleId: starStyleId
                     }
                 })
             },

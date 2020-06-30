@@ -29,7 +29,7 @@
         methods:{
             //获取轮播图的信息
             getCarousel(){
-                this.$axios.get("/api/star/index")
+                this.$axios.get("/vm/star/index")
                     .then(res => {
                             console.log(res.data)
                             // var str = JSON.stringify(res.data);
@@ -48,7 +48,7 @@
                     )
             },
             getListByPage(){
-                this.$axios.get("/api/star/listAll")
+                this.$axios.get("/vm/star/listAll")
                     .then(res => {
                             console.log(res.data);
                         }

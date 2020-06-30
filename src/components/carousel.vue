@@ -63,7 +63,7 @@
         },
         created() {
             // data.all = getAll()
-            this.$axios.get("/api/star/index")
+            this.$axios.get("/vm/star/index")
                 .then(res => {
                         // console.log(res.data)
                         var str = JSON.stringify(res.data);

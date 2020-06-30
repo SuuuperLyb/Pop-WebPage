@@ -57,7 +57,7 @@
             }
         },
         created() {
-            this.$axios.get("/api/star/listAll")
+            this.$axios.get("/vm/star/listAll")
                 .then(res => {
                     // console.log(res.data);
                     var str = JSON.stringify(res.data);//转化为json字符串
@@ -87,7 +87,7 @@
                     return;
                 }
                 //请求数据
-                this.$axios.get("/api/star/listAll",{
+                this.$axios.get("/vm/star/listAll",{
                     params: {
                         startPage: index
                     }

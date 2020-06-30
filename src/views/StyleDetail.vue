@@ -93,7 +93,7 @@
                 return this.$route.query.starStyleId;
             },
             showStyleDetail(styleId){//后端请求数据，展示明星风格详情页
-                this.$axios.get("/api/star/detail",{params:{starStyleId:styleId}})
+                this.$axios.get("/vm/star/detail",{params:{starStyleId:styleId}})
                     .then(res => {
                             console.log(res.data.tstarStyle)
                             var str = JSON.stringify(res.data);

@@ -4,10 +4,10 @@ import StyleIndex from "../views/StyleIndex";
 import Index from "../views/Index";
 import UserCenter from "../views/UserCenter";
 import StyleDetail from "../views/StyleDetail";
-import StoreDetail from "../views/StoreDetail"
+import StoreDetail from "../views/StoreDetail";
+import GoodDetail from "../views/GoodDetail";
 
 Vue.use(VueRouter)
-
   const routes = [
     {
       //首页商品展示页面
@@ -35,6 +35,11 @@ Vue.use(VueRouter)
       path:'/StoreDetail',
       name:'StoreDetail',
       component:StoreDetail
+    },
+    {//商品详情页
+      path:'/GoodDetail',
+      name:'GoodDetail',
+      component:GoodDetail
     }
 ]
 
